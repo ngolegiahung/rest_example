@@ -1,4 +1,4 @@
-package com.restclient.rest_client_examples.api.model;
+package com.restclient.api.model;
 
 import lombok.Getter;
 import lombok.Setter;

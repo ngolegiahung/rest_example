@@ -1,4 +1,4 @@
-package com.restclient.rest_client_examples.api.model;
+package com.restclient.api.model;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,16 +10,14 @@ import java.util.Map;
 
 @Getter
 @Setter
-public class Location implements Serializable {
+public class Job implements Serializable {
 
-    private String street;
-    private String city;
-    private String state;
-    private String postcode;
+    private String title;
+    private String company;
     private Map<String, Object> additionalProperties = new HashMap<>();
 
     @Serial
-    private final static long serialVersionUID = -3532048267747973846L;
+    private final static long serialVersionUID = -4985150429002262656L;
 
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);

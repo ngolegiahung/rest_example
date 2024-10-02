@@ -1,4 +1,4 @@
-package com.restclient.rest_client_examples.api.model;
+package com.restclient.api.model;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,15 +10,18 @@ import java.util.Map;
 
 @Getter
 @Setter
-public class ExpirationDate implements Serializable {
+public class Card implements Serializable {
 
-    private String date;
-    private Integer timezoneType;
-    private String timezone;
+    private String type;
+    private String number;
+    private ExpirationDate expirationDate;
+    private String iban;
+    private String swift;
+
     private Map<String, Object> additionalProperties = new HashMap<>();
 
     @Serial
-    private final static long serialVersionUID = 4661228813349752965L;
+    private final static long serialVersionUID = 6203456183354582742L;
 
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
